@@ -54,91 +54,23 @@ This toolkit is built using the FastMCP framework and provides several tools tha
 
 ### Documentation Tools
 
-#### Get Documentation URLs
+## Extract-Web-Page-Content-Tool
+Tool to extract page content in text format
 
-Retrieve URLs for official documentation:
+## Generate-FFmpeg-Command
+Generate FFmpeg command for common video operations
 
-```python
-from mcp.client import Client
+## Get-Documentation-URLs
+Retrieve URLs for official documentation of ffmpeg, live streaming, or AWS services
 
-client = Client('mcp-ffmpeg-livestream-aws')
-# Get FFmpeg documentation URLs
-ffmpeg_docs = client.get_documentation_urls(service_category="ffmpeg")
-# Get AWS media services documentation URLs
-aws_docs = client.get_documentation_urls(service_category="aws")
-# Get live streaming protocol documentation URLs
-streaming_docs = client.get_documentation_urls(service_category="live_streaming")
-```
+## Get-Service-Documentation
+Extract content from specific service documentation
 
-#### Get Service Documentation
+## Run-FFmpeg-Command
+Run FFmpeg commands directly on the local system
 
-Extract content from specific service documentation:
-
-```python
-# Get FFmpeg filter documentation
-filter_docs = client.get_service_documentation(service_category="ffmpeg", service_name="filters")
-# Get HLS streaming documentation
-hls_docs = client.get_service_documentation(service_category="live_streaming", service_name="hls")
-```
-
-#### Search Documentation
-
-Search for specific terms across documentation:
-
-```python
-# Search for "keyframe" across all documentation
-results = client.search_documentation(term="keyframe")
-# Search for "bitrate" only in FFmpeg documentation
-ffmpeg_results = client.search_documentation(term="bitrate", service_category="ffmpeg")
-```
-
-### FFmpeg Tools
-
-#### Run FFmpeg Commands
-
-Execute FFmpeg commands directly:
-
-```python
-# Run a simple FFmpeg command
-result = client.run_ffmpeg_command("-i input.mp4 -c:v libx264 -crf 23 output.mp4")
-print(result["status"])  # "success" or "error"
-print(result["stdout"])  # Standard output
-print(result["stderr"])  # Standard error/logs
-```
-
-#### Generate FFmpeg Commands
-
-Generate commands for common video operations:
-
-```python
-# Generate command to trim a video
-trim_cmd = client.generate_ffmpeg_command(
-    operation="trim",
-    input_file="input.mp4",
-    start_time="00:01:00",
-    duration="30",
-    output_file="trimmed_output.mp4"
-)
-print(trim_cmd["full_command"])  # The complete FFmpeg command
-
-# Generate command to extract audio
-audio_cmd = client.generate_ffmpeg_command(
-    operation="extract_audio",
-    input_file="input.mp4",
-    output_format="mp3"
-)
-print(audio_cmd["full_command"])
-
-# Generate and execute a command
-compress_cmd = client.generate_ffmpeg_command(
-    operation="compress",
-    input_file="input.mp4",
-    crf="18",
-    preset="slow",
-    execute=True  # This will execute the command immediately
-)
-print(compress_cmd["execution_result"]["status"])
-```
+## Search-Documentation
+Search for specific term across documentation URLs
 
 ## Supported Operations
 
