@@ -6,6 +6,14 @@ A comprehensive toolkit for FFmpeg video processing, live streaming operations, 
 
 This project provides a set of tools to simplify common video processing tasks, live streaming operations, and AWS media service interactions through a unified interface. It integrates with FFmpeg for video manipulation and offers convenient access to documentation for FFmpeg, various live streaming protocols, and AWS media services.
 
+## Example
+
+In this example, we can see how Claude trims a video of our local machine using ffmpeg.
+
+https://github.com/user-attachments/assets/858ff2f0-8e35-429b-ac91-a11e0fde3c5a
+
+
+
 ## Features
 
 - **Documentation Access**: Retrieve and search through official documentation for FFmpeg, live streaming protocols, and AWS media services
