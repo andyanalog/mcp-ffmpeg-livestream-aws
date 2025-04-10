@@ -10,7 +10,8 @@ This project provides a set of tools to simplify common video processing tasks, 
 
 In this example, we can see how Claude trims a video of our local machine using ffmpeg.
 
-https://github.com/user-attachments/assets/858ff2f0-8e35-429b-ac91-a11e0fde3c5a
+
+https://github.com/user-attachments/assets/49e2ee21-28cf-4455-bbd4-0afbc20e87ca
 
 
 
