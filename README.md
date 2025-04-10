@@ -50,8 +50,30 @@ https://github.com/user-attachments/assets/858ff2f0-8e35-429b-ac91-a11e0fde3c5a
 
 ## Usage
 
-This toolkit is built using the FastMCP framework and provides several tools that can be used programmatically or via command-line.
-
+This toolkit is built using the FastMCP framework and provides several tools that can be used programmatically or via command-line. If you're using Claude, you can run the following command.
+   ```
+   mcp install mcp-server.py
+   ```
+Now, open the claude_desktop_config.json file and check if everything is set correctly. You should see something like this:
+   ```
+   {
+  "mcpServers": {
+    "mcp-ffmpeg-livestream-aws": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--with",
+        "beautifulsoup4",
+        "--with",
+        "mcp[cli]",
+        "mcp",
+        "run",
+        "C:\\YOUR\\DIRECTORY\\mcp-server.py"
+      ]
+    }
+  }
+}
+   ```
 ## Documentation Tools
 
 ### Extract-Web-Page-Content-Tool
