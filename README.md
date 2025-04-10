@@ -52,24 +52,24 @@ https://github.com/user-attachments/assets/858ff2f0-8e35-429b-ac91-a11e0fde3c5a
 
 This toolkit is built using the FastMCP framework and provides several tools that can be used programmatically or via command-line.
 
-### Documentation Tools
+## Documentation Tools
 
-## Extract-Web-Page-Content-Tool
+### Extract-Web-Page-Content-Tool
 Tool to extract page content in text format
 
-## Generate-FFmpeg-Command
+### Generate-FFmpeg-Command
 Generate FFmpeg command for common video operations
 
-## Get-Documentation-URLs
+### Get-Documentation-URLs
 Retrieve URLs for official documentation of ffmpeg, live streaming, or AWS services
 
-## Get-Service-Documentation
+### Get-Service-Documentation
 Extract content from specific service documentation
 
-## Run-FFmpeg-Command
+### Run-FFmpeg-Command
 Run FFmpeg commands directly on the local system
 
-## Search-Documentation
+### Search-Documentation
 Search for specific term across documentation URLs
 
 ## Supported Operations
